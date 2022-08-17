@@ -1,38 +1,115 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(359deg, #8e398e, #495d9b, #6e479b);
+  background-size: 600% 600%;
+  -webkit-animation: aurora 33s ease infinite;
+  -moz-animation: aurora 33s ease infinite;
+  -o-animation: aurora 33s ease infinite;
+  animation: aurora 33s ease infinite;
+}
+
+@-webkit-keyframes aurora {
+  0% {
+    background-position: 51% 0%
+  }
+
+  50% {
+    background-position: 50% 100%
+  }
+
+  100% {
+    background-position: 51% 0%
+  }
+}
+
+@-moz-keyframes aurora {
+  0% {
+    background-position: 51% 0%
+  }
+
+  50% {
+    background-position: 50% 100%
+  }
+
+  100% {
+    background-position: 51% 0%
+  }
+}
+
+@-o-keyframes aurora {
+  0% {
+    background-position: 51% 0%
+  }
+
+  50% {
+    background-position: 50% 100%
+  }
+
+  100% {
+    background-position: 51% 0%
+  }
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 51% 0%
+  }
+
+  50% {
+    background-position: 50% 100%
+  }
+
+  100% {
+    background-position: 51% 0%
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 720px;
+  padding-left: calc(1.5em * .5);
+  padding-right: calc(1.5em * .5);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper > .title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.wrapper > .emoji {
+  font-size: 200px;
+}
+
+.wrapper > .button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 28px;
+  border-radius: 8px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper > .title {
+    font-size: 22px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .wrapper > .button {
+    padding: 14px 24px;
   }
 }
