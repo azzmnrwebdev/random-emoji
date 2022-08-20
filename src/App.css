@@ -13,68 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(359deg, #8e398e, #495d9b, #6e479b);
-  background-size: 600% 600%;
-  -webkit-animation: aurora 33s ease infinite;
-  -moz-animation: aurora 33s ease infinite;
-  -o-animation: aurora 33s ease infinite;
-  animation: aurora 33s ease infinite;
-}
-
-@-webkit-keyframes aurora {
-  0% {
-    background-position: 51% 0%
-  }
-
-  50% {
-    background-position: 50% 100%
-  }
-
-  100% {
-    background-position: 51% 0%
-  }
-}
-
-@-moz-keyframes aurora {
-  0% {
-    background-position: 51% 0%
-  }
-
-  50% {
-    background-position: 50% 100%
-  }
-
-  100% {
-    background-position: 51% 0%
-  }
-}
-
-@-o-keyframes aurora {
-  0% {
-    background-position: 51% 0%
-  }
-
-  50% {
-    background-position: 50% 100%
-  }
-
-  100% {
-    background-position: 51% 0%
-  }
-}
-
-@keyframes aurora {
-  0% {
-    background-position: 51% 0%
-  }
-
-  50% {
-    background-position: 50% 100%
-  }
-
-  100% {
-    background-position: 51% 0%
-  }
+  background-color: #f1f5f9;
 }
 
 .wrapper {
@@ -107,6 +46,10 @@ body {
 @media screen and (max-width: 576px) {
   .wrapper > .title {
     font-size: 22px;
+  }
+
+  .wrapper > .emoji {
+    font-size: 170px;
   }
 
   .wrapper > .button {
